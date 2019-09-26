@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Bootstrap File -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Personal CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crystal Collecttor</title>
+    <title>Crystal Collector</title>
 </head>
+
 <body>
+    <!-- Instructions -->
+
+    <div class="InstructionBlock">
+
+        <h1>Crystal Collector</h1>
+        <div class="col-md-5">
+            <br>
+            <p><strong>Instructions</strong></p>
+            <li>Each Crystal has a secret value</li>
+            <li>Click each crystal to add the mystery values up</li>
+            <li>The added values will be displayed in the "Crystal Points" box</li>
+            <li>Try to get the target value to win!</li>
+        </div>
+    </div>
+    <br>
+    <!-- Game Points Tracker -->
+    <div class="col-sm-6">
+            <div class="crystalpointsbox" id=crystalpointssum> Crystal Points:</div>
+            <div>
+            </div> 
+            <br> 
+    <div class="col-sm-6">
+        <div class="target" id="target">    Target:   
+         </div>
+    </div>
     
+        <br>
+        <!-- Win / Loss Tracker -->
+        <div class="col-md-6">
+            <p id="wins"> Wins:</p>
+        </div>
+        <div class="col-md-6">
+            <p id="losses"> Losses: </p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <!-- Crystal Field -->
+    <div id="crystalfield">
+        <img src="assets/images/crystal1.jpg" id="crystal1">
+        <img src="assets/images/crystal2.jpg" id="crystal2">
+        <img src="assets/images/crystal3.jpg" id="crystal3">
+        <img src="assets/images/crystal4.png" id="crystal4">
+    </div>
+
+
+
 </body>
+
+<!-- JQuery CDN -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
 </html>
