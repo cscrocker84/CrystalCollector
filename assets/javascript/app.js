@@ -28,10 +28,10 @@ function values(min, max) {
 target = values(15, 115);
 
 // crystals values min = 1, max = 12    
-crystalone.value = values(1, 12);
-crystaltwo.value = values(1, 12);
-crystalthree.value = values(1, 12);
-crystalfour.value = values(1, 12);
+crystalOne.value = values(1, 12);
+crystalTwo.value = values(1, 12);
+crystalThree.value = values(1, 12);
+crystalFour.value = values(1, 12);
 
 // Start the game, link it back to the html
 $(document).ready(function startgame() {
@@ -45,6 +45,47 @@ $(document).ready(function startgame() {
     console.log(crystalThree);
     console.log(crystalFour);
     console.log(gamestart);
+});
+
+$("#crystal1").on("click", function () {
+
+    if (gamestart === true) {
+        points += crystalOne.value;
+        console.log(crystalOne);
+        $('#crystalpointssum').html("<p>Points: " + points + "</p>");
+    }
+});
+
+$("#crystal2").on("click", function () {
+
+    if (gamestart === true) {
+        points += crystalTwo.value;
+        console.log(crystalTwo);
+        $('#crystalpointssum').html("<p>Points: " + points + "</p>");
+        
+    }
+});
+
+
+
+$("#crystal3").on("click", function () {
+
+    if (gamestart === true) {
+        points += crystalThree.value;
+        console.log(crystalThree);
+        $('#crystalpointssum').html("<p>Points: " + points + "</p>");
+        
+    }
+});
+
+$("#crystal4").on("click", function () {
+
+    if (gamestart === true) {
+        points += crystalFour.value;
+        console.log(crystalFour);
+        $('#crystalpointssum').html("<p>Points: " + points + "</p>");
+        
+    }
 });
 
 
