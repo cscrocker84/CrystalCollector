@@ -33,6 +33,16 @@ crystalTwo.value = values(1, 12);
 crystalThree.value = values(1, 12);
 crystalFour.value = values(1, 12);
 
+// Found this on stack overflow
+function valuecheck() {
+    if (crystalone.value === crystaltwo.value | crystalone.value === crystalthree.value | crystaltwo.value === crystalthree.value | crystaltwo.value === crystalfour.value | crystalthree.value === crystalfour.value) {
+         crystalone.value = values(1, 12);
+        crystaltwo.value = values(1, 12);
+        crystalthree.value = values(1, 12);
+        crystalfour.value = values(1, 12);
+    }
+}
+
 // Start the game, link it back to the html
 $(document).ready(function startgame() {
     gamestart = true;
